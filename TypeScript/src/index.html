@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="background-color:#9e9e9e;padding:20px;">
+        <button>测试</button>
+    </div>
+    <div>
+        <canvas id="Canvas" />
+    </div>
+</body>
+
+<script>
+
+    var canvas = document.getElementById("Canvas");
+
+    canvas.width = 500;
+    canvas.height = 500;
+
+
+    console.log(canvas.width, canvas.height);
+
+    var graphics = canvas.getContext('2d');
+    graphics.fillStyle = '#FF0000';
+    graphics.fillRect(0, 0, 400, 100);
+
+
+
+    // graphics.font = "bold 35px Arial";
+    // graphics.fillText("hdf", 10, 10)
+
+
+    graphics.textAlign = 'center';
+    graphics.textBaseline = 'bottom';
+    graphics.fillStyle = '#ccc';
+    graphics.strokeText("Hello Canvas", 150, 100);
+    graphics.fillText("Hello Canvas", 180, 140);
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
